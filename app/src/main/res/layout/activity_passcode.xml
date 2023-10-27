@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sign_up_logo"
+    tools:context=".Passcode">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Passcode Code"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_marginTop="120dp"
+                android:textStyle="bold"/>
+
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textSize="16dp"
+                            android:textColor="#9796A1"
+                            android:text="+91 9123456789"/>
+            -->
+
+            <!--           <com.chaos.view.PinView
+                           android:id="@+id/pinViewPass"
+                           style="@style/PinWidget.PinView"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_marginTop="19dp"
+                           android:cursorVisible="false"
+                           android:elevation="3dp"
+                           android:inputType="number"
+                           android:itemBackground="#FEFCFF"
+                           android:textColor="@color/parisGreen"
+                           android:textSize="20dp"
+                           android:textStyle="bold"
+                           app:cursorColor="@color/parisGreen"
+                           app:cursorWidth="2dp"
+                           app:hideLineWhenFilled="true"
+                           app:itemCount="4"
+                           app:itemHeight="48dp"
+                           app:itemRadius="3dp"
+                           app:itemSpacing="15dp"
+                           app:itemWidth="48dp"
+                           app:lineColor="#FEFCFF"
+                           app:lineWidth="2dp"
+                           app:viewType="rectangle" />-->
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/pinViewPass"
+                app:pinBackground="@color/milkWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pinWidth="40dp"
+                app:pinHeight="40dp"
+                app:pinLength="4"
+                android:textColor="@color/parisGreen"
+                android:textStyle="bold"
+                app:cursorVisible="true"
+                android:layout_marginTop="19dp"
+                app:forceKeyboard="true"
+                app:hint="20"
+                app:inputType="number"
+                app:password="false"/>
+
+
+
+
+            <TextView
+                android:id="@+id/btn_submit_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/signup_bg"
+                android:paddingHorizontal="80dp"
+                android:paddingVertical="10dp"
+                android:text="SUBMIT"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+
+            <TextView
+                android:id="@+id/text_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:text="get value "/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/today_appointment_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="3dp"
+        android:background="@drawable/today_appointment_bg"
+        android:layout_below="@+id/today_appointment_id"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/customer_appointment_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            android:background="@drawable/user_infor_bg"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/today_appointment_id">
+
+            <ImageView
+                android:id="@+id/user_ig"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:src="@drawable/fimal_ig"/>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/user_ig"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                android:layout_marginLeft="20dp"
+                android:text="Suksham Aggarwal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:layout_toRightOf="@+id/user_ig"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:text="Anticipatory Bail"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/dialog_bg"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/hello_ig" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/time_dt_bg"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginVertical="5dp"
+                android:src="@drawable/time_ic"/>
+
+            <TextView
+                android:id="@+id/time_and_date_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_marginVertical="5dp"
+                android:text="27/02/2023 | 12:30 PM"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

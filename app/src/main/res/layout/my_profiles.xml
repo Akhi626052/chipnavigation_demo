@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context=".MyProfiles">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/include_desig_border"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="30dp">
+        <ImageView
+            android:id="@+id/Ima_backed"
+            android:layout_width="15dp"
+            android:padding="0dp"
+            android:layout_height="20dp"
+            app:tint="@color/white"
+            android:src="@drawable/back_ic"/>
+        <TextView
+            android:id="@+id/textHeaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appointments Details"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="18dp"
+        android:elevation="2dp"
+        android:background="@drawable/backgr_edit1">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/photo_icon"/>
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rahul Eendaz"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardian - Rahul kumar"
+                android:layout_marginTop="2dp"
+                android:textColor="#3F434A"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="12sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/email"
+                    />
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="user@gmail.com"
+                    android:layout_marginLeft="10dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/location"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Madhya Pradesh, Indore"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/phone"
+
+                    android:layout_weight="0.1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91-9123456789"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="18dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/male_bg"
+    android:elevation="3dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/gender_bg"
+        android:elevation="2dp"
+        android:textColor="@color/black"
+        android:text="Gender"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="Male"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/male_bg"
+        android:elevation="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/gender_bg"
+            android:elevation="2dp"
+            android:textColor="@color/black"
+            android:text="Qualification"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:textColor="@color/white"
+            android:text="12th"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/male_bg"
+        android:elevation="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/gender_bg"
+            android:elevation="2dp"
+            android:textColor="@color/black"
+            android:text="Age"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:textColor="@color/white"
+            android:text="25 Years"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/male_bg"
+        android:elevation="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/gender_bg"
+            android:elevation="2dp"
+            android:textColor="@color/black"
+            android:text="Address"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Reference site about Lorem Ipsum,giving"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Information"/>
+  </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edit2_border"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:paddingHorizontal="60dp"
+        android:layout_marginBottom="20dp"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:paddingVertical="3dp"
+            android:layout_gravity="center"
+            android:src="@drawable/edit_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Edit Profile"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

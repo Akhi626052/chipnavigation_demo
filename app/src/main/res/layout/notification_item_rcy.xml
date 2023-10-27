@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:androdid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/notification_bg"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp">
+        <ImageView
+            android:id="@+id/not_ic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/notification_ic_bg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/notification_ic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/not_ic"
+            android:layout_marginVertical="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_below="@+id/not_ic"
+                android:layout_toRightOf="@+id/not_ic"
+                android:text="Publishing and graphic design"/>
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/not_ic"
+                android:layout_below="@+id/pub_heading_txt"
+                android:text="Lorem Ipsum is simply dummy text of the printi"/>
+
+            <TextView
+                android:id="@+id/user_type_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/not_ic"
+                android:layout_below="@+id/index_txt"
+                android:text="and typesetting industry"/>
+            <TextView
+                android:id="@+id/status_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/not_ic"
+                android:layout_below="@+id/Print_txt"
+                android:text="15 Min Ago"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

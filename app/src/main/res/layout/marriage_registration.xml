@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/marriage2_reg_bg"
+
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/Mrg_reg_assi_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="3dp"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:background="@drawable/marriage_reg_bg"
+       >
+        <TextView
+            android:id="@+id/Mrg_reg_assi_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Marriage Registration Assistance?"/>
+        <TextView
+            android:id="@+id/mrg_details_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/Mrg_reg_assi_id"
+            android:text="Lorem ipsum may be used as a"/>
+        <TextView
+            android:id="@+id/mrg_details2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mrg_details_id"
+            android:text="placeholder before copy is available."/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>
+

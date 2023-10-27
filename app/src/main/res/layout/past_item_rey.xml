@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:elevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/backbg_edit">
+            <ImageView
+                android:id="@+id/prof_ig"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fimal_ig"/>
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/prof_ig"
+                android:text="Suksham Aggarwal"/>
+            <TextView
+                android:id="@+id/text_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male, 25 years"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@+id/prof_ig"
+                android:layout_below="@+id/text_name"/>
+            <ImageView
+                android:id="@+id/calling_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/call_editor"
+                android:src="@drawable/call_ig" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/RlStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:tint="@color/black"
+            android:background="@drawable/backgr_edit3">
+            <ImageView
+                android:id="@+id/time_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/timing_screen"/>
+            <TextView
+                android:id="@+id/date_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/time_image"
+                android:paddingLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:text="27/02/2023 | 12:30 PM"/>
+            <TextView
+                android:id="@+id/Cn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelled"
+                android:paddingRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

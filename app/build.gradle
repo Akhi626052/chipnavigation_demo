@@ -1,0 +1,98 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+
+
+}
+
+android {
+    namespace 'com.daizzyinfo.chipnavigation_demo'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.daizzyinfo.chipnavigation_demo"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-inappmessaging-display-ktx:20.3.2'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.2'
+
+//    implementation 'io.github.chaosleung:pinview:1.4.4'
+   // implementation 'com.google.android.material:material:1.1.0'
+    // pin view
+
+    // implementation 'com.chaos.view:pinv iew:1.4.4'
+
+    implementation 'com.github.GoodieBag:Pinview:v1.5'
+
+
+//retrofit dependency
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+
+    //glide dependencies
+
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    // implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+
+
+// firebase dependencies
+
+    implementation 'com.google.firebase:firebase-messaging:20.1.6'
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.gms:google-services:4.3.8'
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+
+    // Add the dependency for the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation "com.google.code.gson:gson:2.8.6"
+
+
+    configurations {
+        implementation.exclude group: 'org.jetbrains', module: 'annotations'
+    }
+
+}

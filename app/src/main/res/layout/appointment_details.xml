@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppointmentDetails">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/include_desig_border"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="30dp">
+        <ImageView
+            android:id="@+id/Ima_backed"
+            android:layout_width="15dp"
+            android:padding="0dp"
+            android:layout_height="20dp"
+            app:tint="@color/white"
+            android:src="@drawable/back_ic"/>
+        <TextView
+            android:id="@+id/textHeaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appointments Details"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:elevation="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/customer_bgColorCh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:background="@drawable/customer_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@drawable/backgr_edit1">
+                <ImageView
+                    android:id="@+id/profesanal_ig"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/fimal_ig"/>
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/profesanal_ig"
+                    android:text="Rajesh K.S."/>
+                <TextView
+                    android:id="@+id/text_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Anticipatory Bail, Arbitration, Armed Forc.."
+                    android:paddingLeft="10dp"
+                    android:lines="1"
+                    android:layout_toRightOf="@+id/profesanal_ig"
+                    android:layout_below="@+id/text_name"/>
+
+                <RelativeLayout
+                    android:id="@+id/exper_tv_crl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_age"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/profesanal_ig">
+
+                    <ImageView
+                        android:id="@+id/exp_icon_crl"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/experience_ic"/>
+
+                    <TextView
+                        android:id="@+id/experience_crl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@+id/exp_icon_crl"
+                        android:text="16 years Experience" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/location_tx_rl_crl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exper_tv_crl"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/profesanal_ig">
+                    <ImageView
+                        android:id="@+id/location_id_crl"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:tint="#8C8A9D"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/locatin_ic"/>
+                    <TextView
+                        android:id="@+id/location_tv_crlr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/location_id_crl"
+                        android:layout_marginLeft="7dp"
+                        android:text="Kailash Hills, Delhi"/>
+                </RelativeLayout>
+
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/calling_ig"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/location_tx_rl_crl"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/call_editor"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/call_ig" />
+
+                <LinearLayout
+                    android:id="@+id/reviews_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/location_tx_rl_crl"
+                    android:background="@drawable/infor_backgr2">
+
+                    <RelativeLayout
+                        android:id="@+id/oneninetynine3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp"
+                        android:background="@drawable/board_onninin">
+                        <ImageView
+                            android:id="@+id/rupees_ig3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:paddingVertical="5dp"
+                            app:tint="@color/black"
+                            android:src="@drawable/rupee"/>
+                        <TextView
+                            android:id="@+id/oneHeNinNi3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_toRightOf="@+id/rupees_ig3"
+                            android:text="199"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp"
+                        android:layout_toRightOf="@+id/oneninetynine">
+                        <ImageView
+                            android:id="@+id/star_ig"
+                            android:layout_width="10dp"
+                            android:layout_height="20dp"
+                            android:paddingVertical="5dp"
+                            android:scaleType="fitXY"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/star"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/star_ig"
+                            android:layout_centerVertical="true"
+                            android:text="4.5(12 Reviews)"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/time_date_col_line"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+                <!--android:background="@drawable/appoindateandtime_boar"-->
+                <LinearLayout
+                    android:id="@+id/date_time_lin"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/date_time_rel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="7dp">
+                        <ImageView
+                            android:id="@+id/time_sr"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="5dp"
+                            android:src="@drawable/timing_screen"/>
+                        <TextView
+                            android:id="@+id/tim_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/time_sr"
+                            android:paddingLeft="20dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/white"
+                            android:text="27/02/2023 | 12:30 PM"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp">
+                        <ImageView
+                            android:id="@+id/time_sr1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="5dp"
+                            android:src="@drawable/timing_screen"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/time_sr1"
+                            android:paddingLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/white"
+                            android:text="Time Slot: 10:00 AM- 11:00"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:id="@+id/cangettx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:text="Cancelled"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="55dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="11dp"
+                android:textColor="@color/black"
+                android:text="Free Information"/>
+            <LinearLayout
+                android:id="@+id/refunded_color_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="11dp"
+                android:background="@drawable/rectangle_rounded">
+
+                <RelativeLayout
+                    android:id="@+id/oneninetynine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="11dp"
+                    android:background="@drawable/board_onninin">
+                    <ImageView
+                        android:id="@+id/rupees_ig"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:paddingVertical="5dp"
+                        app:tint="@color/black"
+                        android:src="@drawable/rupee"/>
+                    <TextView
+                        android:id="@+id/oneHeNinNi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/rupees_ig"
+                        android:text="199"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:layout_toRightOf="@+id/oneninetynine">
+                    <TextView
+                        android:id="@+id/refunded_name_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/white"
+                        android:text="Refunded"/>
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/backgr_edit1">
+                <ImageView
+                    android:id="@+id/profesanal_ig2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/fimal_ig"/>
+                <TextView
+                    android:id="@+id/text_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/profesanal_ig2"
+                    android:text="Rajesh K.S."/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relat_experi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profesanal_ig2"
+                    android:layout_below="@+id/text_name2">
+                    <ImageView
+                        android:id="@+id/expe_log"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="5dp"
+                        app:tint="#8C8A9D"
+                        android:src="@drawable/call_ig"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+91 9123456789"
+                        android:layout_toRightOf="@+id/expe_log"
+                        android:paddingLeft="10dp"/>
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/anticipatory_rel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profesanal_ig2"
+                    android:layout_below="@+id/relat_experi">
+                    <ImageView
+                        android:id="@+id/expe_log2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="5dp"
+                        app:tint="#8C8A9D"
+                        android:src="@drawable/location"/>
+                    <TextView
+                        android:id="@id/adr_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="605,AB road,indore, Madhya Pradesh"
+                        android:layout_toRightOf="@+id/expe_log2"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="452010"
+                        android:layout_marginLeft="26dp"
+                        android:paddingLeft="10dp"
+                        android:layout_below="@+id/adr_id"/>
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/buttonHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need help?"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="80dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/infor_backgr2"/>
+
+         <!--   <TextView
+                android:id="@+id/tx_cance_appoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelled Appointment"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"/>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+</LinearLayout>

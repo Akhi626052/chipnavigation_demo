@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+<RelativeLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/parisGreen"
+
+    android:layout_height="140dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="16dp"
+       >
+        <ImageView
+            android:id="@+id/home_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user_ic"/>
+        <TextView
+            android:id="@+id/wlCm_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/home_iv"
+            android:paddingBottom="1dp"
+            android:text="Welcome"
+            android:textColor="@color/tealishGreen"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/heading_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wlCm_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/home_iv"
+            android:paddingTop="1dp"
+            android:text="Alex Lucifer"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search_ic"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/notification_ic"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/lacation_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:padding="10dp"
+        android:background="@drawable/enteryorlocation_bg"
+        android:layout_marginHorizontal="10dp"
+        android:elevation="5dp">
+        <ImageView
+            android:id="@+id/location_ic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/location" />
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_toRightOf="@+id/location_ic"
+            android:text="Enter your location here" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/online_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/online_bg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lacation_id">
+        <ImageView
+                android:id="@+id/balance_bg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/balance_ic"
+                app:tint="@color/white"
+                android:background="@drawable/balance_bg" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/balance_bg">
+            <TextView
+                android:id="@+id/lawyers_are"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginLeft="3dp"
+                android:layout_centerVertical="true"
+                android:text="500+ Lawyer's are online"
+                android:layout_marginVertical="7dp"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/lawyers_are"
+                android:layout_marginRight="10dp"
+                android:text="online"
+                android:layout_marginLeft="3dp"
+                android:textAlignment="center"
+                android:layout_marginVertical="7dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/categories_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/online_id">
+
+    <RelativeLayout
+        android:id="@+id/categories_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/categories_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:layout_marginVertical="10dp"
+
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/ct_vi_all_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignEnd="@+id/categories_id"
+            android:text="view All"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+         <LinearLayout
+             android:id="@+id/group_child"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_below="@+id/categories_view"
+             android:layout_marginHorizontal="10dp">
+
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/recyclerView"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="10dp">
+
+
+             </androidx.recyclerview.widget.RecyclerView>
+
+
+         </LinearLayout>
+
+
+
+         <com.denzcoskun.imageslider.ImageSlider
+             android:id="@+id/land_and_FirmIg"
+             android:layout_width="wrap_content"
+             android:layout_height="130dp"
+             app:iss_auto_cycle="true"
+             app:iss_period="1000"
+             app:iss_delay="1000"
+             android:scaleType="fitXY"
+             android:layout_marginVertical="15dp"
+             android:layout_marginHorizontal="10dp"
+             android:layout_below="@+id/group_child"
+             app:iss_text_align="CENTER"/>
+
+
+         <TextView
+    android:id="@+id/today_appointment_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/land_and_FirmIg"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:layout_marginHorizontal="10dp"
+    android:text="Today's Appointment"/>
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/today_apm_rey_id"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/today_appointment_id">
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+         <TextView
+             android:id="@+id/top_lawyer_id"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textStyle="bold"
+             android:textColor="@color/black"
+             android:layout_marginHorizontal="10dp"
+             android:layout_marginVertical="10dp"
+             android:layout_below="@+id/today_apm_rey_id"
+             android:text="Top Lawyers"/>
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/Top_lawyer_rey"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/top_lawyer_id">
+
+
+
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/marriage_rey"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/Top_lawyer_rey">
+
+
+
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+<TextView
+    android:id="@+id/court_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    android:layout_below="@+id/marriage_rey"
+    android:text="Courts"/>
+
+
+         <androidx.recyclerview.widget.RecyclerView
+
+             android:id="@+id/courts_rey"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/court_id">
+
+
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+         <TextView
+             android:id="@+id/lawyers_by_court"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/courts_rey"
+             android:textStyle="bold"
+             android:textColor="@color/black"
+             android:layout_marginVertical="10dp"
+             android:layout_marginHorizontal="10dp"
+             android:text="Lawyers by court"/>
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/lawyers_by_courts_rey"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/lawyers_by_court">
+
+
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/corporate_lawyers_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lawyers_by_courts_rey"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Corporate Lawyers"/>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/corporate_lawyers_rey"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/corporate_lawyers_id">
+
+
+
+
+       </androidx.recyclerview.widget.RecyclerView>
+
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/corporate_lawyers_rey"
+    android:id="@+id/coupon_rcy"/>
+
+
+
+
+
+
+
+     </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+

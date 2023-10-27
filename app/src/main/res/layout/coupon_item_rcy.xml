@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <LinearLayout
+       android:layout_below="@+id/corporate_lawyers_rey"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginHorizontal="20dp"
+       android:background="@drawable/coupon_boarder"
+       android:paddingVertical="10dp"
+       android:layout_marginBottom="20dp"
+       android:layout_marginTop="20dp">
+
+       <ImageView
+           android:layout_width="90dp"
+           android:layout_height="70dp"
+           android:src="@drawable/coupon"/>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginLeft="15dp"
+           >
+
+           <TextView
+               android:id="@+id/coupon_code_txt"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:text="Get up to 25% off on New Registration"
+               android:paddingBottom="5dp"/>
+
+           <TextView
+               android:id="@+id/title_txt"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white"
+               android:text="Loream ipsum may be used as a placeh"/>
+
+           <TextView
+               android:id="@+id/user_type_txt"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:maxLines="1"
+               android:textColor="@color/white"
+               android:text="before final copy is available code LAWSEVA"/>
+
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+
+</LinearLayout>

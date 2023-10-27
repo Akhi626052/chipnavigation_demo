@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="15dp"
+    android:elevation="2dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginVertical="10dp"
+    android:background="@drawable/kotputali_bg"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:id="@+id/cor_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/court_ig"/>
+        <TextView
+            android:id="@+id/tv_adj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/cor_id"
+            android:layout_marginLeft="5dp"
+            android:text=" A.D.J Kotputali"/>
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+           android:layout_gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next_ic"/>
+    </RelativeLayout>
+
+
+

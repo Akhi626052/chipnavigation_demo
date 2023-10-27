@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".Passcode"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false">
+
+            <!-- // khklfhdsghkl -->
+
+        </activity>
+        <activity
+            android:name=".SearchScreen"
+            android:exported="false">
+
+            <!-- post api categories and Lawyers use api in Search -->
+
+        </activity>
+        <activity
+            android:name=".notification"
+            android:exported="false" />
+        <activity
+            android:name=".Support2"
+            android:exported="false">
+
+            <!-- no add screen -->
+
+        </activity>
+        <activity
+            android:name=".Filter"
+            android:exported="false">
+
+            <!-- no add screen -->
+
+        </activity>
+        <activity
+            android:name=".AboutLawyer"
+            android:exported="true">
+
+            <!-- no set screen -->
+
+        </activity>
+        <activity
+            android:name=".ContactWithUs"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".MyProfiles"
+            android:exported="false" />
+        <activity
+            android:name=".Support"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AllCategories"
+            android:exported="false" />
+        <activity
+            android:name=".VerificationCode"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_Up"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+
+            <!-- application starting point -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Theme.Chipnavigation_demo -->
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Appointments"
+            android:exported="false" />
+        <activity
+            android:name=".AllLawyers"
+            android:exported="false">
+
+            <!-- all lawyers and about lawyers, day and timeslot inside only create in Adapter use api about lawyers -->
+
+        </activity>
+        <activity
+            android:name=".BottomNavigtionChipbar"
+            android:exported="false">
+
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>
